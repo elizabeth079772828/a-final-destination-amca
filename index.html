@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My App — NovaHub</title>
+<title>Vdesi Chat</title>
 <style>
 :root{
   --header-h: 64px;
   --sidebar-w: 256px;
 
-  --bg: #ffffff;
-  --bg-subtle: #f8f9fa;
-  --surface: #ffffff;
-  --border: #e8eaed;
-  --border-strong: #dadce0;
+  --bg: #0b0b0f;
+  --bg-subtle: #15151b;
+  --surface: #111116;
+  --border: #292930;
+  --border-strong: #3a3a44;
 
-  --text-primary: #202124;
-  --text-secondary: #5f6368;
-  --text-tertiary: #80868b;
+  --text-primary: #f5f5f7;
+  --text-secondary: #b7b7c2;
+  --text-tertiary: #858592;
 
   --accent: #5b6cff;
   --accent-dark: #4451d6;
@@ -28,9 +28,9 @@
 
   --star: #f5a623;
 
-  --shadow-1: 0 1px 2px rgba(60,64,67,.15);
-  --shadow-2: 0 1px 3px rgba(60,64,67,.18), 0 4px 8px rgba(60,64,67,.12);
-  --shadow-hover: 0 2px 6px rgba(60,64,67,.22), 0 6px 16px rgba(60,64,67,.14);
+  --shadow-1: 0 1px 2px rgba(0,0,0,.35);
+  --shadow-2: 0 1px 3px rgba(0,0,0,.45), 0 4px 12px rgba(0,0,0,.35);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,.5), 0 8px 20px rgba(0,0,0,.4);
 
   --radius-s: 8px;
   --radius-m: 12px;
@@ -78,7 +78,7 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
   background: var(--bg-subtle); border-radius: var(--radius-pill); height:44px; padding: 0 16px;
   transition: background .15s ease, box-shadow .15s ease;
 }
-.search-wrap:focus-within{ background: var(--surface); box-shadow: 0 1px 6px rgba(32,33,36,.18); }
+.search-wrap:focus-within{ background: var(--surface); box-shadow: 0 1px 6px rgba(0,0,0,.45); }
 .search-icon{ flex-shrink:0; color: var(--text-secondary); width:18px; height:18px; }
 #searchInput{ border:none; outline:none; background:transparent; font-size:15px; color: var(--text-primary); width:100%; padding: 0 10px; font-family: inherit; }
 #searchInput::placeholder{ color: var(--text-tertiary); }
@@ -146,7 +146,7 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
 .btn:active{ transform: scale(.98); }
 .btn-install{ background: var(--install-green); color:#fff; }
 .btn-install:hover{ background: var(--install-green-dark); box-shadow: var(--shadow-1); }
-.btn-lg{ padding:12px 34px; font-size:15px; }
+.btn-lg{ padding:15px 44px; font-size:17px; min-height:50px; }
 .icon-btn-outline{
   width:44px; height:44px; border-radius:50%; border:1px solid var(--border-strong); background:var(--surface);
   display:flex; align-items:center; justify-content:center; color:var(--text-secondary); flex-shrink:0;
@@ -255,6 +255,24 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
 }
 @media (prefers-reduced-motion: reduce){ *{ transition-duration:.01ms !important; } }
 </style>
+
+<style id="vdesi-dark-theme">
+:root{
+  --bg:#000000;
+  --bg-subtle:#0b0b0b;
+  --surface:#111111;
+  --border:#292929;
+  --border-strong:#3d3d3d;
+  --text-primary:#ffffff;
+  --text-secondary:#c2c2c2;
+  --text-tertiary:#8d8d8d;
+}
+body{background:#000;color:#fff;}
+.topbar,.sidebar{background:#111;}
+.search-wrap{background:#0b0b0b;}
+.icon-btn:hover,.brand:hover,.side-link:hover,.icon-btn-outline:hover{background:#1c1c1c;}
+</style>
+
 </head>
 <body>
 
@@ -272,7 +290,7 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
         <circle cx="8.8" cy="26.5" r="3.2" fill="#fff" fill-opacity=".85"/>
         <defs><linearGradient id="g1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#5B6CFF"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>
       </svg>
-      <span class="brand-name">NovaHub</span>
+      <span class="brand-name">Vdesi Chat</span>
     </a>
   </div>
   <div class="topbar-center">
@@ -318,12 +336,12 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
   </aside>
 
   <main class="main-content">
-    <nav class="breadcrumb">Apps <span>›</span> Productivity <span>›</span> Driftnote</nav>
+    <nav class="breadcrumb">Apps <span>›</span> Productivity <span>›</span> Vdesi Chat</nav>
 
     <section class="app-hero">
-      <img class="hero-icon" id="heroIcon" alt="Driftnote icon" />
+      <img class="hero-icon" id="heroIcon" alt="Vdesi Chat icon" />
       <div class="hero-info">
-        <h1>Driftnote</h1>
+        <h1>Vdesi Chat</h1>
         <a class="hero-dev" href="#">Driftwood Digital</a>
         <div class="hero-tags">
           <span class="chip-tag">Productivity</span>
@@ -363,7 +381,7 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
 
     <section class="section">
       <h2>About this app</h2>
-      <p class="about-text" id="aboutText">Driftnote is a calm, distraction-free space for capturing thoughts the moment they happen. Quick-capture notes, voice-to-text jotting, and gentle daily prompts help you build a journaling habit without the pressure of a blank page. Organize entries into folders, tag them for later, and search everything instantly — even offline. A soft focus mode dims everything except the page you're writing on, and end-to-end encrypted backup means your private thoughts stay private. Whether it's a morning journal, meeting notes, or a fleeting idea on the bus, Driftnote is built to get out of your way and let you write.</p>
+      <p class="about-text" id="aboutText">Vdesi Chat is a calm, distraction-free space for capturing thoughts the moment they happen. Quick-capture notes, voice-to-text jotting, and gentle daily prompts help you build a journaling habit without the pressure of a blank page. Organize entries into folders, tag them for later, and search everything instantly — even offline. A soft focus mode dims everything except the page you're writing on, and end-to-end encrypted backup means your private thoughts stay private. Whether it's a morning journal, meeting notes, or a fleeting idea on the bus, Vdesi Chat is built to get out of your way and let you write.</p>
       <button class="read-more-btn" id="readMoreBtn">Read more</button>
     </section>
 
@@ -389,8 +407,8 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
     <section class="section">
       <h2>App support</h2>
       <div class="support-grid">
-        <div><div class="info-label">Email</div><div class="info-value">support@driftnote.app</div></div>
-        <div><div class="info-label">Website</div><div class="info-value">driftnote.app</div></div>
+        <div><div class="info-label">Email</div><div class="info-value">support@vdesichat.app</div></div>
+        <div><div class="info-label">Website</div><div class="info-value">vdesichat.app</div></div>
       </div>
     </section>
 
@@ -407,9 +425,9 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
     </section>
 
     <footer class="foot-links">
-      <span>NovaHub</span>
+      <span>Vdesi Chat</span>
       <a href="#">Settings</a><a href="#">Help</a><a href="#">Privacy</a><a href="#">Terms</a>
-      <span class="foot-copy">© 2026 NovaHub. Placeholder app listing for demo purposes.</span>
+      <span class="foot-copy">© 2026 Vdesi Chat.</span>
     </footer>
   </main>
 </div>
@@ -421,7 +439,7 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
   YOUR APP FILES
   ============================
   Put these files beside this index.html:
-    app.apk
+    VdesiChat.app
 
   Put these image files inside the assets folder:
     assets/app-icon.png
@@ -430,7 +448,7 @@ svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; 
     assets/screenshot-3.png
     assets/screenshot-4.png
 
-  Then the Install button downloads app.apk.
+  Then the Install button downloads VdesiChat.app.
 -->
 <script>
 function makeIcon(seed, colorA, colorB, glyph) {
@@ -543,8 +561,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Install / wishlist buttons
   document.getElementById("installBtn").addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "app.apk";
-    link.download = "app.apk";
+    link.href = "VdesiChat.app";
+    link.download = "VdesiChat.app";
     document.body.appendChild(link);
     link.click();
     link.remove();
