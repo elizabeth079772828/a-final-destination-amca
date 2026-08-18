@@ -439,7 +439,7 @@ body{background:#000;color:#fff;}
   YOUR APP FILES
   ============================
   Put these files beside this index.html:
-    VdesiChat.app
+    VdesiChat.apk
 
   Put these image files inside the assets folder:
     assets/app-icon.png
@@ -448,7 +448,7 @@ body{background:#000;color:#fff;}
     assets/screenshot-3.png
     assets/screenshot-4.png
 
-  Then the Install button downloads VdesiChat.app.
+  Then the Install button downloads VdesiChat.apk.
 -->
 <script>
 function makeIcon(seed, colorA, colorB, glyph) {
@@ -561,8 +561,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Install / wishlist buttons
   document.getElementById("installBtn").addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "VdesiChat.app";
-    link.download = "VdesiChat.app";
+    link.href = "VdesiChat.apk";
+    link.download = "VdesiChat.apk";
     document.body.appendChild(link);
     link.click();
     link.remove();
